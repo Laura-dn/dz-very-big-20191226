@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Avrakhova Laura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ITstep Dnipro, gr. web_2019, dz-js">
+    <title>Avrakhova dz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h3>
+            1. Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 – если первое больше, чем второе; и 0 – если числа равны.
+        </h3>
+        <input type="text" id="numb1" class="chislo" placeholder="Введите 1-е число " autofocus>
+        <input type="text" id="numb2" class="chislo" placeholder="Введите 2-е число">
+        <button id="btn2Numbers">2 числа</button>
+        <div class="result result2Numbers"></div>
+    </section>
+
+    <section>
+        <h3>
+            2. Написать функцию, которая вычисляет факториал переданного ей числа.
+        </h3>
+        <input type="text" id="fact" placeholder="Введите число">
+        <button id="btnFactorial">Факториал числа</button>
+        <div class="result resultFactorial"></div>
+    </section>
+
+    <section>
+        <h3>
+            3. Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149.
+        </h3>
+        <input type="text" class="doNumb" placeholder="Введите 1-ю цифру">
+        <input type="text" class="doNumb" placeholder="Введите 2-ю цифру">
+        <input type="text" class="doNumb" placeholder="Введите 3-ю цифру">
+        <button id="btnOneNumber">Одно число</button>
+        <div class="result resultOneNumber"></div>
+    </section>
+
+    <section>
+        <h3>
+            4. Написать функцию, которая принимает длину и ширину
+            прямоугольника и вычисляет его площадь. Если в функцию
+            передали 1 параметр, то она вычисляет площадь квадрата.
+        </h3>
+        <input type="text" class="rectSide" placeholder="Введите длину прямоугольника">
+        <input type="text" class="rectSide" placeholder="Введите ширину прямоугольника">
+        <button id="btnSquare">Рассчитать площадь</button>
+        <div class="result resultSquare"></div>
+    </section>
+
+    <section>
+        <h3>
+            5. Написать функцию, которая проверяет, является ли переданное ей число совершенным. Совершенное число – это число, равное сумме всех своих собственных делителей.
+        </h3>
+        <input type="text" class="perfectNumb" placeholder="Введите число">
+        <button id="btnPerfectNumb">Совершенное число</button>
+        <div class="result resultPerfNumb"></div>
+    </section>
+
+    <section>
+        <h3>
+            6. Написать функцию, которая принимает минимальное и максимальное значения для диапазона, и выводит только те числа из диапазона, которые являются совершенными.
+Используйте написанную ранее функцию, чтобы узнавать, совершенное число или нет.
+        </h3>
+        <input type="text" id="minNumb1" placeholder="Введите минимальное значение диапазона">
+        <input type="text" id="minNumb2" placeholder="Введите максимальное значение диапазона">
+        <button id="btnMinNumb">Совершенное число в диапазоне</button>
+        <div class="result resultMinfNumb"></div>
+    </section>
+
+    <section>
+        <h3>
+            7. Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс». Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
+        </h3>
+        <input type="number" class="myTime" id="hour" placeholder="Укажите время (часы)" min="0" max="24">
+        <input type="number" class="myTime" id="minute" placeholder="Укажите время (минуты)" min="0" max="59">
+        <input type="number" class="myTime" id="second" placeholder="Укажите время (секунды)" min="0" max="59">
+        <div class="result resultTime">
+            <span class="resultMyTime">00</span>:<span class="resultMyTime">00</span>:<span class="resultMyTime">00</span>
+            <br>
+            <span class="error"></span>
+        </div>
+    </section>
+
+    <section>
+        <h3>
+            8. Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
+        </h3>
+        <input type="number" class="myTime2" placeholder="Укажите время (часы)" min="0" max="24">
+        <input type="number" class="myTime2" placeholder="Укажите время (минуты)" min="0" max="59">
+        <input type="number" class="myTime2" placeholder="Укажите время (секунды)" min="0" max="59">
+        <button id="btnSecond">Получить</button>
+        <div class="result">
+            <span class="resultSecond"></span><br>
+        </div>
+    </section>
+
+    <section>
+        <h3>
+            9. Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды и возвращает в виде строки «чч:мм:сс».
+        </h3>
+        <input type="number" class="doTime" placeholder="Укажите количество секунд" min="0">
+        <button id="btnDoTime">Перевести секунды</button>
+        <div class="result madeTime">
+            <span class="resultDoTime">00</span>:<span class="resultDoTime">00</span>:<span class="resultDoTime">00</span>
+            <br>
+            <span class="error1"></span>
+        </div>
+    </section>
+
+    <section>
+        <h3>
+            10. Написать функцию, которая считает разницу между датами. Функция принимает 6 параметров, которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». При
+            выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в секунды, узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс».
+        </h3>
+        <div class="manyInputs">
+            <input type="number" class="differenceDate" placeholder="Часы" min="0" max="24">
+            <input type="number" class="differenceDate" placeholder="Минуты" min="0" max="59">
+            <input type="number" class="differenceDate" placeholder="Секунды" min="0" max="59">
+        </div>
+        <div class="manyInputs">
+            <input type="number" class="differenceDate" placeholder="Часы" min="0" max="24">
+            <input type="number" class="differenceDate" placeholder="Минуты" min="0" max="59">
+            <input type="number" class="differenceDate" placeholder="Секунды" min="0" max="59">
+        </div>
+        <button id="btnDifDate">Дата</button>
+        <div class="result doneDate">
+            <span class="resultDoneDate">00</span>:<span class="resultDoneDate">00</span>:<span class="resultDoneDate">00</span>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
